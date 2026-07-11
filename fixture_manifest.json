@@ -1,0 +1,970 @@
+{
+  "fixture_sha256": "a9611183c411e204301ab7d940ec7ac2014168e268b12afb4d15f238705971df",
+  "fixture_version": "provchain-github-attestation-fixture-v1",
+  "num_outputs": 50,
+  "records": [
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-12907",
+      "record_id": "astropy__astropy-12907",
+      "source_file": "0000_astropy__astropy-12907.txt",
+      "source_output_bytes": 579,
+      "source_output_sha256": "959c2e8362fd3cbf9ab33586876665ccc60b4c3f3f6857aa83ef2c16b266bccb",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-13033",
+      "record_id": "astropy__astropy-13033",
+      "source_file": "0001_astropy__astropy-13033.txt",
+      "source_output_bytes": 789,
+      "source_output_sha256": "866260e69559852876569c94ed6103217e67fcb71e5c9c32dd9aed7ec88b22be",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-13236",
+      "record_id": "astropy__astropy-13236",
+      "source_file": "0002_astropy__astropy-13236.txt",
+      "source_output_bytes": 981,
+      "source_output_sha256": "abc201b8928b5f8419920d576e03d63518276b0dea6578207deb3c8a9939d5b2",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-13398",
+      "record_id": "astropy__astropy-13398",
+      "source_file": "0003_astropy__astropy-13398.txt",
+      "source_output_bytes": 987,
+      "source_output_sha256": "70fd3c98d5885df127a3521fea19a8c46558e14fa0680d6d3e759864ec43ce49",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-13453",
+      "record_id": "astropy__astropy-13453",
+      "source_file": "0004_astropy__astropy-13453.txt",
+      "source_output_bytes": 375,
+      "source_output_sha256": "1892a6c70447df815125b217ffe8a3e5a44271edfafa90381bcd33ea7cdad281",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-13579",
+      "record_id": "astropy__astropy-13579",
+      "source_file": "0005_astropy__astropy-13579.txt",
+      "source_output_bytes": 527,
+      "source_output_sha256": "f3d7e752b20418786e93a28898bca12944787597c55e6a23de6d53884de1bc0c",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-13977",
+      "record_id": "astropy__astropy-13977",
+      "source_file": "0006_astropy__astropy-13977.txt",
+      "source_output_bytes": 697,
+      "source_output_sha256": "04e76141be3091ae69a60073f54880b420dda3e38aa63ef298028e6dbcbb7fc6",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-14096",
+      "record_id": "astropy__astropy-14096",
+      "source_file": "0007_astropy__astropy-14096.txt",
+      "source_output_bytes": 401,
+      "source_output_sha256": "5e065aa85e55b6269852909fccc6166fbdb0f577e87a2b939d837660d88edb8e",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-14182",
+      "record_id": "astropy__astropy-14182",
+      "source_file": "0008_astropy__astropy-14182.txt",
+      "source_output_bytes": 844,
+      "source_output_sha256": "efd98f14e49949550607c015f332cec8a90e805deb8e4146487ca268f7ee44d6",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-14309",
+      "record_id": "astropy__astropy-14309",
+      "source_file": "0009_astropy__astropy-14309.txt",
+      "source_output_bytes": 318,
+      "source_output_sha256": "4477cb5d33137f904a981ca7328800f526a69027c92a02c6bcb2a1cca2d153c8",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-14365",
+      "record_id": "astropy__astropy-14365",
+      "source_file": "0010_astropy__astropy-14365.txt",
+      "source_output_bytes": 712,
+      "source_output_sha256": "bf2b47e38bb1205de0a1c98e484ed9574c40f1cade970705426eeccb15504ea5",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-14369",
+      "record_id": "astropy__astropy-14369",
+      "source_file": "0011_astropy__astropy-14369.txt",
+      "source_output_bytes": 298,
+      "source_output_sha256": "934ee61d7f15f980012ca1ee3b2b4ca0a4d57eba02e0f579494661ce4a22e0fc",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-14508",
+      "record_id": "astropy__astropy-14508",
+      "source_file": "0012_astropy__astropy-14508.txt",
+      "source_output_bytes": 743,
+      "source_output_sha256": "d008d1c61530f47e6ac9cc78bb373ec07bc9f9d8eff7d4d719518cdecafee8fb",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-14539",
+      "record_id": "astropy__astropy-14539",
+      "source_file": "0013_astropy__astropy-14539.txt",
+      "source_output_bytes": 161,
+      "source_output_sha256": "ce1594f4dc7fd162ce1b9c322c37ab3f14b6204b6e712adc7378e2e9e65c48e4",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-14598",
+      "record_id": "astropy__astropy-14598",
+      "source_file": "0014_astropy__astropy-14598.txt",
+      "source_output_bytes": 667,
+      "source_output_sha256": "8a40fe8402c8354e156ed706ca34e05dd7b38cf2265f52e1ec83fd864aa66d41",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-14995",
+      "record_id": "astropy__astropy-14995",
+      "source_file": "0015_astropy__astropy-14995.txt",
+      "source_output_bytes": 799,
+      "source_output_sha256": "5648278686a8de6f7fe932c437829f4f9412c1bf346f0f471b3fab7cf294a60a",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-7166",
+      "record_id": "astropy__astropy-7166",
+      "source_file": "0016_astropy__astropy-7166.txt",
+      "source_output_bytes": 1162,
+      "source_output_sha256": "b5610837c70eafc0e027be974e2340add03506584cfaf2b80c075c9fc742ec2b",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-7336",
+      "record_id": "astropy__astropy-7336",
+      "source_file": "0017_astropy__astropy-7336.txt",
+      "source_output_bytes": 183,
+      "source_output_sha256": "cac9a53a97c77eb4b87ab28139a300aaad75dd8393c62100931285b60e264e7b",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-7606",
+      "record_id": "astropy__astropy-7606",
+      "source_file": "0018_astropy__astropy-7606.txt",
+      "source_output_bytes": 491,
+      "source_output_sha256": "4ce7107d89c611efa4975d23a94bd9f154aafc32c85a59aa1b891f6515e0b751",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-7671",
+      "record_id": "astropy__astropy-7671",
+      "source_file": "0019_astropy__astropy-7671.txt",
+      "source_output_bytes": 337,
+      "source_output_sha256": "61a9ca254575495d770b941eda01ff3a520705e8c306b54d3fdb33526a0614d9",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-8707",
+      "record_id": "astropy__astropy-8707",
+      "source_file": "0020_astropy__astropy-8707.txt",
+      "source_output_bytes": 322,
+      "source_output_sha256": "6c2283e5104fbc8f0227d5b20cf7093a3f4c60216ed5231ab8a38607cffc066e",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "astropy/astropy/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:astropy__astropy-8872",
+      "record_id": "astropy__astropy-8872",
+      "source_file": "0021_astropy__astropy-8872.txt",
+      "source_output_bytes": 877,
+      "source_output_sha256": "ee70797b0c5548f4406aecc1b694d648e6d2f8d6714c7b02494f512f1b7dde56",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-10097",
+      "record_id": "django__django-10097",
+      "source_file": "0022_django__django-10097.txt",
+      "source_output_bytes": 848,
+      "source_output_sha256": "47d36d5bd685d103200de63407e39860d5fc85409547a22541e5c3e1792664a5",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-10554",
+      "record_id": "django__django-10554",
+      "source_file": "0023_django__django-10554.txt",
+      "source_output_bytes": 642,
+      "source_output_sha256": "06328b409f231db4d050514cb75c73df0cd4e58ba6190db1ba7d2873161e898c",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-10880",
+      "record_id": "django__django-10880",
+      "source_file": "0024_django__django-10880.txt",
+      "source_output_bytes": 451,
+      "source_output_sha256": "633df8e10cf4db71ee8b3a5ef16871cde35d772a4e811f72abe09a6b2652dea6",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-10914",
+      "record_id": "django__django-10914",
+      "source_file": "0025_django__django-10914.txt",
+      "source_output_bytes": 106,
+      "source_output_sha256": "cdc63956dd60fb33693f72e6891171311cdff5ba6705c8f859852b1021fa95f5",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-10973",
+      "record_id": "django__django-10973",
+      "source_file": "0026_django__django-10973.txt",
+      "source_output_bytes": 494,
+      "source_output_sha256": "3268da070ccc53082ff0625debab15f7c51016538d47db4658031f966a10322b",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-10999",
+      "record_id": "django__django-10999",
+      "source_file": "0027_django__django-10999.txt",
+      "source_output_bytes": 270,
+      "source_output_sha256": "7fd007f6d9b8c58517b811b6c41faf4f90d1edbd8464bd41df0d675a3484d1af",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11066",
+      "record_id": "django__django-11066",
+      "source_file": "0028_django__django-11066.txt",
+      "source_output_bytes": 105,
+      "source_output_sha256": "4b9bc29501a7eacc1cc3063206c0f784e765c6a740e104c722bb0e0bb359e791",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11087",
+      "record_id": "django__django-11087",
+      "source_file": "0029_django__django-11087.txt",
+      "source_output_bytes": 663,
+      "source_output_sha256": "dbbc6e89aca042960ad79930da842a13884ecb904a4f891147f0fb1a3cc6e100",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11095",
+      "record_id": "django__django-11095",
+      "source_file": "0030_django__django-11095.txt",
+      "source_output_bytes": 978,
+      "source_output_sha256": "fb83577630427894fab2e95e2b8299933433849437ea15bad22f7a0d259e62b6",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11099",
+      "record_id": "django__django-11099",
+      "source_file": "0031_django__django-11099.txt",
+      "source_output_bytes": 325,
+      "source_output_sha256": "3047b7b699a4c35bf6132f60d43e672a9e6b5f0f04092861a453558723fb5019",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11119",
+      "record_id": "django__django-11119",
+      "source_file": "0032_django__django-11119.txt",
+      "source_output_bytes": 394,
+      "source_output_sha256": "ad21019457ecdc0c0500b3937ceb2b1397fd18e6891d5d5d5b59faaf8e67e36a",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11133",
+      "record_id": "django__django-11133",
+      "source_file": "0033_django__django-11133.txt",
+      "source_output_bytes": 200,
+      "source_output_sha256": "53c14716e9a5ab8273797bd4a4e901e847eeb4f577d7ae5027d22fbd81892b4f",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11138",
+      "record_id": "django__django-11138",
+      "source_file": "0034_django__django-11138.txt",
+      "source_output_bytes": 1182,
+      "source_output_sha256": "a3254162ed81bcfc5f87581df31af1494d04aff0dabbcc67652167e113553111",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11141",
+      "record_id": "django__django-11141",
+      "source_file": "0035_django__django-11141.txt",
+      "source_output_bytes": 389,
+      "source_output_sha256": "ada5e96eaa601c32ebcf51c9db605767c8f303b85fd6b6d69fd8496d268a86d8",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11149",
+      "record_id": "django__django-11149",
+      "source_file": "0036_django__django-11149.txt",
+      "source_output_bytes": 982,
+      "source_output_sha256": "b5c8acde951a952d4c62871877d0e4c525bf72400854d85ec0ca2f93bcacd4e6",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11163",
+      "record_id": "django__django-11163",
+      "source_file": "0037_django__django-11163.txt",
+      "source_output_bytes": 816,
+      "source_output_sha256": "715c9611402edf8760f5ea6f41898db6948ad0f966de73cb4d93f73502dd5d4d",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11179",
+      "record_id": "django__django-11179",
+      "source_file": "0038_django__django-11179.txt",
+      "source_output_bytes": 412,
+      "source_output_sha256": "c47901b8ae399703f87046451b19038af69be93b32fe99afa7ba3b7615a5c927",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11206",
+      "record_id": "django__django-11206",
+      "source_file": "0039_django__django-11206.txt",
+      "source_output_bytes": 708,
+      "source_output_sha256": "a59931d5a473a02385f2af7f2224a1ebf673ebebbcb39a11bcffade6bd1a4f8d",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11211",
+      "record_id": "django__django-11211",
+      "source_file": "0040_django__django-11211.txt",
+      "source_output_bytes": 1220,
+      "source_output_sha256": "a339adf478209ecde2e0775682ed06501874243aaaa8e0bdf804dc2a8ed88823",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11239",
+      "record_id": "django__django-11239",
+      "source_file": "0041_django__django-11239.txt",
+      "source_output_bytes": 1230,
+      "source_output_sha256": "75887a8516c6694540a8f388789533668439ae9297f4ab418d415602c5cd06ff",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11265",
+      "record_id": "django__django-11265",
+      "source_file": "0042_django__django-11265.txt",
+      "source_output_bytes": 321,
+      "source_output_sha256": "fdd8cb39aeb7a24baf404fd0ecd85a3c16e4151092305b213f53a9e0bd57e6c2",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11276",
+      "record_id": "django__django-11276",
+      "source_file": "0043_django__django-11276.txt",
+      "source_output_bytes": 73,
+      "source_output_sha256": "9c35a7e10c5fe2b8b16d37860b81f09e463278c7afab0bc0f6edf42090d2d90b",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11292",
+      "record_id": "django__django-11292",
+      "source_file": "0044_django__django-11292.txt",
+      "source_output_bytes": 619,
+      "source_output_sha256": "a1fab32b3686017a8ee4a61cdbd788daf44b2daa54aba2dc2cd5da3ce22c5175",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11299",
+      "record_id": "django__django-11299",
+      "source_file": "0045_django__django-11299.txt",
+      "source_output_bytes": 822,
+      "source_output_sha256": "ca8918fb04b33e22cd2c7480fb59ea8773a8e08f6aa92c43c1f89f3422c0138d",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11333",
+      "record_id": "django__django-11333",
+      "source_file": "0046_django__django-11333.txt",
+      "source_output_bytes": 424,
+      "source_output_sha256": "0f1bdcace97895d63340de6a49df387be8f56a90f078bf5a62797c93ce60eab4",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11400",
+      "record_id": "django__django-11400",
+      "source_file": "0047_django__django-11400.txt",
+      "source_output_bytes": 1039,
+      "source_output_sha256": "50958282118ac9b187304a8d6de8e485ba722fe6ea04d95e24aa6393c7d924f7",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11433",
+      "record_id": "django__django-11433",
+      "source_file": "0048_django__django-11433.txt",
+      "source_output_bytes": 244,
+      "source_output_sha256": "e3335c7cbcedd8e346031bea02ece7810b22c9a1b0f8eca961ba927fe4d9350a",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    },
+    {
+      "artifact_id": "django/django/patch.py",
+      "dataset": "swebench",
+      "fixture_version": "provchain-github-attestation-fixture-v1",
+      "range_id": "patch:django__django-11451",
+      "record_id": "django__django-11451",
+      "source_file": "0049_django__django-11451.txt",
+      "source_output_bytes": 549,
+      "source_output_sha256": "da20f66d2bd6b8a8f1d3184d0ab02a09616d88154fe02b5bcd6e30c5e3c64a51",
+      "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    }
+  ],
+  "source_runs": [
+    {
+      "dataset_distribution": {
+        "swebench": 50
+      },
+      "generation_file": "artifacts/e2_qwen_swebench_verified_random_bs4/qwen_generation_records.jsonl",
+      "generation_file_sha256": "30e11a2ec4a2c990a8b0eebacba82ca9c3a1bda86e7910eef1ce3f03bf2e0ee9",
+      "num_records": 50,
+      "records": [
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 579,
+          "output_sha256": "959c2e8362fd3cbf9ab33586876665ccc60b4c3f3f6857aa83ef2c16b266bccb",
+          "range_id": "patch:astropy__astropy-12907",
+          "record_id": "astropy__astropy-12907"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 789,
+          "output_sha256": "866260e69559852876569c94ed6103217e67fcb71e5c9c32dd9aed7ec88b22be",
+          "range_id": "patch:astropy__astropy-13033",
+          "record_id": "astropy__astropy-13033"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 981,
+          "output_sha256": "abc201b8928b5f8419920d576e03d63518276b0dea6578207deb3c8a9939d5b2",
+          "range_id": "patch:astropy__astropy-13236",
+          "record_id": "astropy__astropy-13236"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 987,
+          "output_sha256": "70fd3c98d5885df127a3521fea19a8c46558e14fa0680d6d3e759864ec43ce49",
+          "range_id": "patch:astropy__astropy-13398",
+          "record_id": "astropy__astropy-13398"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 375,
+          "output_sha256": "1892a6c70447df815125b217ffe8a3e5a44271edfafa90381bcd33ea7cdad281",
+          "range_id": "patch:astropy__astropy-13453",
+          "record_id": "astropy__astropy-13453"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 527,
+          "output_sha256": "f3d7e752b20418786e93a28898bca12944787597c55e6a23de6d53884de1bc0c",
+          "range_id": "patch:astropy__astropy-13579",
+          "record_id": "astropy__astropy-13579"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 697,
+          "output_sha256": "04e76141be3091ae69a60073f54880b420dda3e38aa63ef298028e6dbcbb7fc6",
+          "range_id": "patch:astropy__astropy-13977",
+          "record_id": "astropy__astropy-13977"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 401,
+          "output_sha256": "5e065aa85e55b6269852909fccc6166fbdb0f577e87a2b939d837660d88edb8e",
+          "range_id": "patch:astropy__astropy-14096",
+          "record_id": "astropy__astropy-14096"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 844,
+          "output_sha256": "efd98f14e49949550607c015f332cec8a90e805deb8e4146487ca268f7ee44d6",
+          "range_id": "patch:astropy__astropy-14182",
+          "record_id": "astropy__astropy-14182"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 318,
+          "output_sha256": "4477cb5d33137f904a981ca7328800f526a69027c92a02c6bcb2a1cca2d153c8",
+          "range_id": "patch:astropy__astropy-14309",
+          "record_id": "astropy__astropy-14309"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 712,
+          "output_sha256": "bf2b47e38bb1205de0a1c98e484ed9574c40f1cade970705426eeccb15504ea5",
+          "range_id": "patch:astropy__astropy-14365",
+          "record_id": "astropy__astropy-14365"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 298,
+          "output_sha256": "934ee61d7f15f980012ca1ee3b2b4ca0a4d57eba02e0f579494661ce4a22e0fc",
+          "range_id": "patch:astropy__astropy-14369",
+          "record_id": "astropy__astropy-14369"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 743,
+          "output_sha256": "d008d1c61530f47e6ac9cc78bb373ec07bc9f9d8eff7d4d719518cdecafee8fb",
+          "range_id": "patch:astropy__astropy-14508",
+          "record_id": "astropy__astropy-14508"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 161,
+          "output_sha256": "ce1594f4dc7fd162ce1b9c322c37ab3f14b6204b6e712adc7378e2e9e65c48e4",
+          "range_id": "patch:astropy__astropy-14539",
+          "record_id": "astropy__astropy-14539"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 667,
+          "output_sha256": "8a40fe8402c8354e156ed706ca34e05dd7b38cf2265f52e1ec83fd864aa66d41",
+          "range_id": "patch:astropy__astropy-14598",
+          "record_id": "astropy__astropy-14598"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 799,
+          "output_sha256": "5648278686a8de6f7fe932c437829f4f9412c1bf346f0f471b3fab7cf294a60a",
+          "range_id": "patch:astropy__astropy-14995",
+          "record_id": "astropy__astropy-14995"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 1162,
+          "output_sha256": "b5610837c70eafc0e027be974e2340add03506584cfaf2b80c075c9fc742ec2b",
+          "range_id": "patch:astropy__astropy-7166",
+          "record_id": "astropy__astropy-7166"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 183,
+          "output_sha256": "cac9a53a97c77eb4b87ab28139a300aaad75dd8393c62100931285b60e264e7b",
+          "range_id": "patch:astropy__astropy-7336",
+          "record_id": "astropy__astropy-7336"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 491,
+          "output_sha256": "4ce7107d89c611efa4975d23a94bd9f154aafc32c85a59aa1b891f6515e0b751",
+          "range_id": "patch:astropy__astropy-7606",
+          "record_id": "astropy__astropy-7606"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 337,
+          "output_sha256": "61a9ca254575495d770b941eda01ff3a520705e8c306b54d3fdb33526a0614d9",
+          "range_id": "patch:astropy__astropy-7671",
+          "record_id": "astropy__astropy-7671"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 322,
+          "output_sha256": "6c2283e5104fbc8f0227d5b20cf7093a3f4c60216ed5231ab8a38607cffc066e",
+          "range_id": "patch:astropy__astropy-8707",
+          "record_id": "astropy__astropy-8707"
+        },
+        {
+          "artifact_id": "astropy/astropy/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 877,
+          "output_sha256": "ee70797b0c5548f4406aecc1b694d648e6d2f8d6714c7b02494f512f1b7dde56",
+          "range_id": "patch:astropy__astropy-8872",
+          "record_id": "astropy__astropy-8872"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 848,
+          "output_sha256": "47d36d5bd685d103200de63407e39860d5fc85409547a22541e5c3e1792664a5",
+          "range_id": "patch:django__django-10097",
+          "record_id": "django__django-10097"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 642,
+          "output_sha256": "06328b409f231db4d050514cb75c73df0cd4e58ba6190db1ba7d2873161e898c",
+          "range_id": "patch:django__django-10554",
+          "record_id": "django__django-10554"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 451,
+          "output_sha256": "633df8e10cf4db71ee8b3a5ef16871cde35d772a4e811f72abe09a6b2652dea6",
+          "range_id": "patch:django__django-10880",
+          "record_id": "django__django-10880"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 106,
+          "output_sha256": "cdc63956dd60fb33693f72e6891171311cdff5ba6705c8f859852b1021fa95f5",
+          "range_id": "patch:django__django-10914",
+          "record_id": "django__django-10914"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 494,
+          "output_sha256": "3268da070ccc53082ff0625debab15f7c51016538d47db4658031f966a10322b",
+          "range_id": "patch:django__django-10973",
+          "record_id": "django__django-10973"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 270,
+          "output_sha256": "7fd007f6d9b8c58517b811b6c41faf4f90d1edbd8464bd41df0d675a3484d1af",
+          "range_id": "patch:django__django-10999",
+          "record_id": "django__django-10999"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 105,
+          "output_sha256": "4b9bc29501a7eacc1cc3063206c0f784e765c6a740e104c722bb0e0bb359e791",
+          "range_id": "patch:django__django-11066",
+          "record_id": "django__django-11066"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 663,
+          "output_sha256": "dbbc6e89aca042960ad79930da842a13884ecb904a4f891147f0fb1a3cc6e100",
+          "range_id": "patch:django__django-11087",
+          "record_id": "django__django-11087"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 978,
+          "output_sha256": "fb83577630427894fab2e95e2b8299933433849437ea15bad22f7a0d259e62b6",
+          "range_id": "patch:django__django-11095",
+          "record_id": "django__django-11095"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 325,
+          "output_sha256": "3047b7b699a4c35bf6132f60d43e672a9e6b5f0f04092861a453558723fb5019",
+          "range_id": "patch:django__django-11099",
+          "record_id": "django__django-11099"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 394,
+          "output_sha256": "ad21019457ecdc0c0500b3937ceb2b1397fd18e6891d5d5d5b59faaf8e67e36a",
+          "range_id": "patch:django__django-11119",
+          "record_id": "django__django-11119"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 200,
+          "output_sha256": "53c14716e9a5ab8273797bd4a4e901e847eeb4f577d7ae5027d22fbd81892b4f",
+          "range_id": "patch:django__django-11133",
+          "record_id": "django__django-11133"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 1182,
+          "output_sha256": "a3254162ed81bcfc5f87581df31af1494d04aff0dabbcc67652167e113553111",
+          "range_id": "patch:django__django-11138",
+          "record_id": "django__django-11138"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 389,
+          "output_sha256": "ada5e96eaa601c32ebcf51c9db605767c8f303b85fd6b6d69fd8496d268a86d8",
+          "range_id": "patch:django__django-11141",
+          "record_id": "django__django-11141"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 982,
+          "output_sha256": "b5c8acde951a952d4c62871877d0e4c525bf72400854d85ec0ca2f93bcacd4e6",
+          "range_id": "patch:django__django-11149",
+          "record_id": "django__django-11149"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 816,
+          "output_sha256": "715c9611402edf8760f5ea6f41898db6948ad0f966de73cb4d93f73502dd5d4d",
+          "range_id": "patch:django__django-11163",
+          "record_id": "django__django-11163"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 412,
+          "output_sha256": "c47901b8ae399703f87046451b19038af69be93b32fe99afa7ba3b7615a5c927",
+          "range_id": "patch:django__django-11179",
+          "record_id": "django__django-11179"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 708,
+          "output_sha256": "a59931d5a473a02385f2af7f2224a1ebf673ebebbcb39a11bcffade6bd1a4f8d",
+          "range_id": "patch:django__django-11206",
+          "record_id": "django__django-11206"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 1220,
+          "output_sha256": "a339adf478209ecde2e0775682ed06501874243aaaa8e0bdf804dc2a8ed88823",
+          "range_id": "patch:django__django-11211",
+          "record_id": "django__django-11211"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 1230,
+          "output_sha256": "75887a8516c6694540a8f388789533668439ae9297f4ab418d415602c5cd06ff",
+          "range_id": "patch:django__django-11239",
+          "record_id": "django__django-11239"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 321,
+          "output_sha256": "fdd8cb39aeb7a24baf404fd0ecd85a3c16e4151092305b213f53a9e0bd57e6c2",
+          "range_id": "patch:django__django-11265",
+          "record_id": "django__django-11265"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 73,
+          "output_sha256": "9c35a7e10c5fe2b8b16d37860b81f09e463278c7afab0bc0f6edf42090d2d90b",
+          "range_id": "patch:django__django-11276",
+          "record_id": "django__django-11276"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 619,
+          "output_sha256": "a1fab32b3686017a8ee4a61cdbd788daf44b2daa54aba2dc2cd5da3ce22c5175",
+          "range_id": "patch:django__django-11292",
+          "record_id": "django__django-11292"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 822,
+          "output_sha256": "ca8918fb04b33e22cd2c7480fb59ea8773a8e08f6aa92c43c1f89f3422c0138d",
+          "range_id": "patch:django__django-11299",
+          "record_id": "django__django-11299"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 424,
+          "output_sha256": "0f1bdcace97895d63340de6a49df387be8f56a90f078bf5a62797c93ce60eab4",
+          "range_id": "patch:django__django-11333",
+          "record_id": "django__django-11333"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 1039,
+          "output_sha256": "50958282118ac9b187304a8d6de8e485ba722fe6ea04d95e24aa6393c7d924f7",
+          "range_id": "patch:django__django-11400",
+          "record_id": "django__django-11400"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 244,
+          "output_sha256": "e3335c7cbcedd8e346031bea02ece7810b22c9a1b0f8eca961ba927fe4d9350a",
+          "range_id": "patch:django__django-11433",
+          "record_id": "django__django-11433"
+        },
+        {
+          "artifact_id": "django/django/patch.py",
+          "dataset": "swebench",
+          "output_bytes": 549,
+          "output_sha256": "da20f66d2bd6b8a8f1d3184d0ab02a09616d88154fe02b5bcd6e30c5e3c64a51",
+          "range_id": "patch:django__django-11451",
+          "record_id": "django__django-11451"
+        }
+      ],
+      "run": "artifacts/e2_qwen_swebench_verified_random_bs4"
+    }
+  ]
+}

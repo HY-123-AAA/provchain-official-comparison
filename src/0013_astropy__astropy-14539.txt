@@ -1,0 +1,7 @@
+```python
+diff = fits.FITSDiff('diffbug.fits', 'diffbug.fits')
+if not diff.identical:
+    print("Files are different")
+else:
+    print("Files are identical")
+```

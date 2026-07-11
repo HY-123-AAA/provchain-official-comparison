@@ -1,0 +1,13 @@
+```python
+from django.conf import settings
+from django.urls.resolvers import get_resolver
+
+# Modify get_resolver to look up settings.ROOT_URLCONF before the memoized function call
+def optimized_get_resolver(urlconf=None):
+    if urlconf is None:
+        urlconf = settings.ROOT_URLCONF
+    return get_resolver(urlconf)
+
+# Replace the original get_resolver with the optimized version
+get_resolver = optimized_get_resolver
+```

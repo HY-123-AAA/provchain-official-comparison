@@ -1,0 +1,22 @@
+```python
+diff --git a/django/contrib/admin/filters.py b/django/contrib/admin/filters.py
+index 1234567..89abcdef 100644
+--- a/django/contrib/admin/filters.py
++++ b/django/contrib/admin/filters.py
+@@ -193,7 +193,10 @@ class RelatedFieldListFilter(ListFilter):
+         # If the related model has an ordering specified, use it.
+         if hasattr(self.field.remote_field.model._meta, 'ordering'):
+             ordering = self.field.remote_field.model._meta.ordering
+-        else:
++        elif self.field.remote_field.model._default_manager.order_by():
++            ordering = self.field.remote_field.model._default_manager.order_by()
++        else:
+             ordering = ()
+ 
+         # If the related model has a ModelAdmin class with an ordering specified, use it.
+@@ -422,7 +425,7 @@ class RelatedOnlyFieldListFilter(RelatedFieldListFilter):
+         # Get the choices for the filter.
+         choices = field.get_choices(
+             include_blank=False,
+-            limit=choices_limit,
++            limit=choices_limit, ordering

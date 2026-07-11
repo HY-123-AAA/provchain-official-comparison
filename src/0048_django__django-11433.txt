@@ -1,0 +1,9 @@
+```python
+def save(self, commit=True):
+    instance = super().save(commit=False)
+    for field_name, value in self.cleaned_data.items():
+        setattr(instance, field_name, value)
+    if commit:
+        instance.save()
+    return instance
+```

@@ -1,0 +1,16 @@
+```python
+import astropy.coordinates as coord
+
+
+class custom_coord(coord.SkyCoord):
+    @property
+    def prop(self):
+        try:
+            return self.random_attr
+        except AttributeError as e:
+            raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{e.args[0].split('.')[-1]}'") from None
+
+
+c = custom_coord('00h42m30s', '+41d12m00s', frame='icrs')
+c.prop
+```

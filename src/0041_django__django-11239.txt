@@ -1,0 +1,35 @@
+```python
+# Add support for client certificates and key in dbshell
+
+from django.core.management.base import BaseCommand
+from django.db import connections
+import psycopg2
+
+class Command(BaseCommand):
+    help = 'Run the PostgreSQL shell with client certificates and key'
+
+    def handle(self, *args, **options):
+        db_config = connections['default'].get_connection_params()
+        
+        # Extract SSL options from DATABASES settings
+        ssl_options = {
+            'sslmode': db_config.get('sslmode', 'disable'),
+            'sslrootcert': db_config.get('sslrootcert'),
+            'sslcert': db_config.get('sslcert'),
+            'sslkey': db_config.get('sslkey'),
+        }
+        
+        # Filter out None values
+        ssl_options = {k: v for k, v in ssl_options.items() if v is not None}
+        
+        # Connect to the database with SSL options
+        conn = psycopg2.connect(**db_config, **ssl_options)
+        
+        # Start the interactive shell
+        try:
+            cursor = conn.cursor()
+            self.stdout.write("Connected to database. Type 'exit' to quit.")
+            while True:
+                try:
+                    command = input("dbshell> ")
+                    if command.strip

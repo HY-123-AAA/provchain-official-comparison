@@ -1,0 +1,11 @@
+{
+  "fixture_version": "provchain-github-attestation-fixture-v1",
+  "dataset": "swebench",
+  "record_id": "django__django-10554",
+  "artifact_id": "django/django/patch.py",
+  "range_id": "patch:django__django-10554",
+  "source_output_sha256": "06328b409f231db4d050514cb75c73df0cd4e58ba6190db1ba7d2873161e898c",
+  "source_output_bytes": 642,
+  "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4",
+  "source_file": "0023_django__django-10554.txt"
+}

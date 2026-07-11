@@ -1,0 +1,10 @@
+```python
+def is_fits(origin, filepath, fileobj, *args, **kwargs):
+    if filepath.lower().endswith(
+        (".fits", ".fits.gz", ".fit", ".fit.gz", ".fts", ".fts.gz")
+    ):
+        return True
+    if args and isinstance(args[0], (HDUList, TableHDU, BinTableHDU, GroupsHDU)):
+        return True
+    return False
+```

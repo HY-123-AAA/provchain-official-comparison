@@ -1,0 +1,21 @@
+To address the issue where `np.float16` quantities get upgraded to `np.float64` automatically, you can modify the `Quantity` class to handle `np.float16` specifically. Here's a patch that ensures `np.float16` remains `np.float16` when creating a `Quantity`:
+
+```python
+import numpy as np
+from astropy.units import Quantity
+
+class CustomQuantity(Quantity):
+    def __new__(cls, value, unit=None, dtype=None, copy=True, order=None, subok=True, ndmin=0):
+        if isinstance(value, np.float16):
+            dtype = np.float16
+        return super().__new__(cls, value, unit=unit, dtype=dtype, copy=copy, order=order, subok=subok, ndmin=ndmin)
+
+# Example usage
+q1 = CustomQuantity(np.float16(1), u.km)
+print(q1.dtype)  # Output: dtype('float16')
+
+q2 = CustomQuantity(np.float32(1), u.km)
+print(q2.dtype)  # Output: dtype('float32')
+
+q3 = CustomQuantity(np.float64(1), u.km)
+print

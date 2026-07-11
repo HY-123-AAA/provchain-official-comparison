@@ -1,0 +1,16 @@
+```python
+from astropy.modeling import models as m
+from astropy.modeling.separable import separability_matrix
+
+# Define the nested CompoundModel
+cm = m.Linear1D(10) & m.Linear1D(5)
+nested_cm = m.Pix2Sky_TAN() & cm
+
+# Compute the separability matrix
+sep_matrix = separability_matrix(nested_cm)
+
+# Print the separability matrix
+print(sep_matrix)
+```
+
+This code defines a nested CompoundModel and computes its separability matrix using the `separability_matrix` function from Astropy. The output should reflect the correct separability of inputs and outputs within the nested model.

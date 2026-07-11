@@ -1,0 +1,18 @@
+```python
+from django.core.management.base import BaseCommand
+
+class Command(BaseCommand):
+    help = 'Run a management command with the option to skip checks'
+
+    def add_arguments(self, parser):
+        parser.add_argument('--skip-checks', action='store_true', help='Skip system checks')
+
+    def handle(self, *args, **options):
+        if options['skip_checks']:
+            self.stdout.write(self.style.WARNING('Skipping system checks'))
+            # Add logic here to skip checks
+        else:
+            self.stdout.write(self.style.SUCCESS('Running with system checks'))
+
+        # Your command logic here
+```

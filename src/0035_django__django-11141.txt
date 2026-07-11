@@ -1,0 +1,11 @@
+```python
+# Remove the __file__ check in the migrate command
+def find_migrations(package):
+    # Use pkgutil.iter_modules() to discover migration files
+    import pkgutil
+    migrations = []
+    for _, module_name, is_pkg in pkgutil.iter_modules(package.__path__):
+        if not is_pkg and module_name.startswith('00'):
+            migrations.append(module_name)
+    return migrations
+```

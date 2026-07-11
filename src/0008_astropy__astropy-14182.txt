@@ -1,0 +1,22 @@
+```diff
+diff --git a/astropy/io/ascii/rst.py b/astropy/io/ascii/rst.py
+index 1234567..89abcdef 100644
+--- a/astropy/io/ascii/rst.py
++++ b/astropy/io/ascii/rst.py
+@@ -10,6 +10,7 @@ from .core import BaseReader, BaseWriter, TableOutputter
+ class RST(BaseWriter):
+     name = 'rst'
+     description = 'reStructuredText table'
++    header_rows = ['name', 'unit']
+ 
+     def write(self, table, **kwargs):
+         lines = []
+@@ -21,6 +22,10 @@ class RST(BaseWriter):
+             lines.append(' '.join(['='*len(col.name) for col in table.columns]))
+ 
+         # Add data rows
++        if 'header_rows' in kwargs and 'unit' in kwargs['header_rows']:
++            lines.append(' '.join([col.unit.to_string() for col in table.columns]))
++            lines.append(' '.join(['='*len(str(col.unit)) for col in table.columns]))
++
+         for row in table:

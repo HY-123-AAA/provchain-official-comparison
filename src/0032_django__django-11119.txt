@@ -1,0 +1,12 @@
+```python
+def render_to_string(self, template_name, context=None, request=None):
+    """
+    Render a template to a string.
+    """
+    context = context or {}
+    if isinstance(context, Context):
+        context = context.flatten()
+    else:
+        context = Context(context, autoescape=self.autoescape)
+    return self.template_loader.get_template(template_name).render(context, request)
+```

@@ -1,0 +1,4 @@
+```python
+with transaction.atomic(using=db):
+    content_type.save(using=db, update_fields={'model'})
+```

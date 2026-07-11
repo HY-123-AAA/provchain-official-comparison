@@ -1,0 +1,15 @@
+```python
+# File: django/db/models/deletion.py
+
+def collector(self, field, sub_objs, using):
+    # ... (existing code)
+
+    for obj in sub_objs:
+        db = router.db_for_write(obj._meta.model, instance=obj)
+        if db == using:
+            obj.delete(using=using)
+            # Update the primary key to None after deletion
+            setattr(obj, obj._meta.pk.attname, None)
+
+    # ... (existing code)
+```

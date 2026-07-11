@@ -1,0 +1,20 @@
+```python
+import inspect
+
+class InheritDocstrings(type):
+    def __new__(cls, name, bases, dct):
+        for key, value in dct.items():
+            if isinstance(value, property):
+                # Check if the property has a getter and if its docstring is not set
+                if value.fget and not value.fget.__doc__:
+                    # Try to find a docstring in the base classes
+                    for base in bases:
+                        base_prop = getattr(base, key, None)
+                        if isinstance(base_prop, property) and base_prop.fget and base_prop.fget.__doc__:
+                            value = property(value.fget, value.fset, value.fdel, base_prop.fget.__doc__)
+                            dct[key] = value
+                            break
+        return super().__new__(cls, name, bases, dct)
+```
+
+This patch modifies the `InheritDocstrings` metaclass to handle properties correctly. It checks if a property has a getter and if the getter's docstring is not set. If so, it searches through the base classes to find a matching property with a non-empty docstring and assigns that docstring to the current property's getter.

@@ -1,0 +1,31 @@
+```python
+import warnings
+import numpy as np
+from astropy.table import Column, NdarrayMixin
+
+def add_column_to_table(table, name, data):
+    data_is_mixin = isinstance(data, NdarrayMixin)
+    
+    # Check if data is a structured ndarray
+    if (not isinstance(data, Column) and not data_is_mixin
+            and isinstance(data, np.ndarray) and len(data.dtype) > 1):
+        
+        # Issue a FutureWarning
+        warnings.warn(
+            "Adding a structured ndarray to a Table will be deprecated in version 5.2. "
+            "Please wrap your data in a Column instead.",
+            FutureWarning, stacklevel=2
+        )
+        
+        # In future versions, this line will be removed
+        data = data.view(NdarrayMixin)
+        data_is_mixin = True
+    
+    # Add the column to the table
+    table[name] = Column(data)
+
+# Example usage
+table = {}
+data = np.array([(1, 'a'), (2, 'b')], dtype=[('id', int), ('name', 'U1')])
+add_column_to_table(table, 'example', data)
+```

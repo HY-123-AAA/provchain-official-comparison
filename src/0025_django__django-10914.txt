@@ -1,0 +1,6 @@
+```python
+# settings.py
+
+# Set default FILE_UPLOAD_PERMISSION to 0o644
+FILE_UPLOAD_PERMISSIONS = 0o644
+```

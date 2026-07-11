@@ -1,0 +1,11 @@
+{
+  "fixture_version": "provchain-github-attestation-fixture-v1",
+  "dataset": "swebench",
+  "record_id": "astropy__astropy-14309",
+  "artifact_id": "astropy/astropy/patch.py",
+  "range_id": "patch:astropy__astropy-14309",
+  "source_output_sha256": "4477cb5d33137f904a981ca7328800f526a69027c92a02c6bcb2a1cca2d153c8",
+  "source_output_bytes": 318,
+  "source_run": "artifacts/e2_qwen_swebench_verified_random_bs4",
+  "source_file": "0009_astropy__astropy-14309.txt"
+}

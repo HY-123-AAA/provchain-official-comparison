@@ -1,0 +1,24 @@
+To fix the issue with `prefetch_related` not working correctly when using a GenericForeignKey (GFK) on a model with a UUIDField as the primary key, you need to ensure that the `prefetch_related` method is aware of the UUIDField type. This can be achieved by overriding the `get_prefetch_queryset` method in the `GenericForeignKey` class.
+
+Here's a patch that addresses this issue:
+
+```python
+from django.contrib.contenttypes.fields import GenericForeignKey
+from django.db.models.query_utils import PathInfo
+from django.db.models.sql.datastructures import BaseTable
+from django.db.models.sql.where import WhereNode
+import uuid
+
+class UUIDGenericForeignKey(GenericForeignKey):
+    def get_prefetch_queryset(self, instances, queryset=None):
+        if queryset is None:
+            queryset = super().get_prefetch_queryset(instances, queryset)
+
+        # Ensure that the object_id is converted to UUID before filtering
+        object_ids = [str(instance.pk) for instance in instances]
+        object_ids = [uuid.UUID(obj_id) for obj_id in object_ids]
+
+        # Create a WhereNode to filter the queryset
+        where = WhereNode()
+        for obj_id in object_ids:
+            where.add((self.ct_field + '__exact', self.ct

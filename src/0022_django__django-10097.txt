@@ -1,0 +1,25 @@
+```python
+import re
+from django.core.exceptions import ValidationError
+from django.utils.translation import gettext_lazy as _
+
+class URLValidator:
+    ul = '\u00a1-\uffff'  # Unicode letters range
+    uregex = (
+        r'(?:(?:[a-z0-9' + ul + r'-]+:)?'  # scheme
+        r'(?:[a-z0-9' + ul + r'-]+(?:\.[a-z0-9' + ul + r'-]+)*|\[(?:[a-f0-9:.]+)\])'  # domain
+        r'(?::\d+)?'  # port
+        r'(?:/?|[/?]\S+)$', re.IGNORECASE)
+
+    def __init__(self, schemes=None, regex=uregex):
+        self.schemes = schemes
+        self.regex = regex
+
+    def __call__(self, value):
+        if not value:
+            raise ValidationError(_('Enter a valid URL.'), code='invalid')
+
+        # Check if the URL has a valid scheme
+        if self.schemes is not None:
+            scheme = value.split('://')[0].lower()
+            if scheme not in self.schemes:

@@ -1,0 +1,12 @@
+```python
+import io
+
+def fromstring(cls, header_string):
+    if isinstance(header_string, bytes):
+        header_string = header_string.decode('ascii')
+    elif not isinstance(header_string, str):
+        raise TypeError("Input must be a bytes or str object")
+    
+    # Existing implementation of fromstring
+    # ...
+```

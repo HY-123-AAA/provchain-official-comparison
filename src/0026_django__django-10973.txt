@@ -1,0 +1,22 @@
+```python
+import os
+from subprocess import run
+
+def pg_dump_command():
+    # Define your pg_dump command here
+    return ['pg_dump', '-U', 'username', '-d', 'database_name']
+
+def run_pg_dump():
+    env = os.environ.copy()
+    env['PGPASSWORD'] = 'your_password'
+    
+    result = run(pg_dump_command(), env=env, capture_output=True, text=True)
+    
+    if result.returncode != 0:
+        print(f"Error: {result.stderr}")
+    else:
+        print(result.stdout)
+
+# Example usage
+run_pg_dump()
+```

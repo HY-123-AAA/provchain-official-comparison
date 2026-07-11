@@ -1,0 +1,19 @@
+```python
+diff --git a/astropy/io/fits/card.py b/astropy/io/fits/card.py
+index 0116ac2..1234567 100644
+--- a/astropy/io/fits/card.py
++++ b/astropy/io/fits/card.py
+@@ -1297,7 +1297,11 @@ class Card:
+         if isinstance(value, float):
+             # Try to use the default string representation first
+             value_str = str(value)
+-            if len(value_str) > 20:
++            # Check if the default string representation fits within 20 characters
++            if len(value_str.replace('e+', 'E').replace('e-', 'E')) > 20:
++                # If not, fall back to the formatted representation
++                value_str = f"{value:.16G}"
++            else:
+                 value_str = f"{value:.16G}"
+ 
+         return value_str
+```

@@ -1,0 +1,24 @@
+```python
+diff --git a/astropy/io/fits/card.py b/astropy/io/fits/card.py
+index 1234567..89abcdef 100644
+--- a/astropy/io/fits/card.py
++++ b/astropy/io/fits/card.py
+@@ -123,7 +123,7 @@ class Card:
+         if value is None:
+             value = ''
+ 
+-        if isinstance(value, str):
++        if isinstance(value, str) and value != '':
+             value = value.replace("'", "''")
+ 
+         self._value = value
+@@ -145,7 +145,7 @@ class Card:
+         if value is None:
+             value = ''
+ 
+-        if isinstance(value, str):
++        if isinstance(value, str) and value != '':
+             value = value.replace("''", "'")
+ 
+         self._value = value
+```

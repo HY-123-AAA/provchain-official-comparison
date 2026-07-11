@@ -1,0 +1,18 @@
+```python
+diff --git a/astropy/timeseries/core.py b/astropy/timeseries/core.py
+index 1234567..89abcdef 100644
+--- a/astropy/timeseries/core.py
++++ b/astropy/timeseries/core.py
+@@ -1234,6 +1234,10 @@ class TimeSeries(Table):
+         if colname in self._required_columns:
+             raise ValueError(f"Cannot remove required column '{colname}' from TimeSeries.")
+ 
++        # Check if removing the column will leave any required columns missing
++        remaining_columns = set(self.colnames) - {colname}
++        if not remaining_columns.issuperset(self._required_columns):
++            raise ValueError(f"Cannot remove column '{colname}' as it would leave required columns missing.")
++
+         super().remove_column(colname)
+ 
+     def add_column(self, col, index=None, name=None):
+```

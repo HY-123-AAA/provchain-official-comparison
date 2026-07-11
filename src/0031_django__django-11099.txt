@@ -1,0 +1,11 @@
+```python
+# File: django/contrib/auth/validators.py
+
+class ASCIIUsernameValidator:
+    regex = r'\A[\w.@+-]+\Z'
+    message = 'Enter a valid username. This value may contain only letters, numbers, and ./+/-/_ characters.'
+    flags = 0
+
+class UnicodeUsernameValidator(ASCIIUsernameValidator):
+    regex = r'\A[\w.@+-]+\Z'
+```

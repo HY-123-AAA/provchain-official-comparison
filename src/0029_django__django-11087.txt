@@ -1,0 +1,22 @@
+```python
+from django.db import models
+
+class Job(models.Model):
+    guid = models.CharField(max_length=255, unique=True)
+    repository_id = models.IntegerField()
+    submit_time = models.DateTimeField()
+
+    class Meta:
+        db_table = 'job'
+
+    def cycle_data(self, cutoff_time, chunk_size, sleep_time):
+        jobs = Job.objects.filter(repository_id=1, submit_time__lt=cutoff_time)
+        total_deleted = 0
+
+        while jobs.exists():
+            jobs_chunk = jobs[:chunk_size].values_list('guid', flat=True)
+            total_deleted += jobs.filter(guid__in=jobs_chunk).delete()[0]
+            time.sleep(sleep_time)
+
+        return total_deleted
+```

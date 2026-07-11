@@ -1,0 +1,14 @@
+```python
+from astropy.table import Table
+from astropy.units import Unit
+
+# Read the table
+dat = Table.read('tab.txt', format='ascii.cds')
+
+# Correct the units manually
+dat['SBCONT'].unit = Unit('10+3J/m/s/kpc2')
+dat['SBLINE'].unit = Unit('10-7J/s/kpc2')
+
+# Print the corrected table
+print(dat)
+```

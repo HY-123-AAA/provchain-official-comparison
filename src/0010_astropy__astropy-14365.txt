@@ -1,0 +1,24 @@
+```python
+diff --git a/astropy/io/ascii/qdp.py b/astropy/io/ascii/qdp.py
+index 1234567..89abcdef 100644
+--- a/astropy/io/ascii/qdp.py
++++ b/astropy/io/ascii/qdp.py
+@@ -100,7 +100,7 @@ class QdpHeader(Header):
+         self.commands = []
+ 
+     def add_command(self, line):
+-        if line.strip().upper() == 'END':
++        if line.strip().lower() == 'end':
+             return False
+         self.commands.append(line)
+         return True
+@@ -130,7 +130,7 @@ class QdpHeader(Header):
+         self.data = []
+ 
+     def add_data(self, line):
+-        if line.strip().upper() == 'END':
++        if line.strip().lower() == 'end':
+             return False
+         self.data.append(line)
+         return True
+```

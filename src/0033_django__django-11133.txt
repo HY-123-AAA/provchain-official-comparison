@@ -1,0 +1,9 @@
+```python
+from django.http import HttpResponse
+
+# memoryview content
+response = HttpResponse(memoryview(b"My Content").tobytes())
+response.content
+# Out: b'My Content'
+# This should now be correct
+```

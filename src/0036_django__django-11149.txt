@@ -1,0 +1,29 @@
+```python
+from django.contrib import admin
+from django.contrib.auth.models import Permission
+from django.contrib.contenttypes.models import ContentType
+from django.db import models
+
+class Photo(models.Model):
+    pass
+
+class Report(models.Model):
+    photos = models.ManyToManyField(Photo)
+
+class ReportPhotoInlineModelAdmin(admin.TabularInline):
+    model = Report.photos.through
+    show_change_link = True
+
+    def has_add_permission(self, request, obj=None):
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+class ReportAdmin(admin.ModelAdmin):
+    inlines = [ReportPhotoInlineModelAdmin]
+
+admin.site.register(Report, ReportAdmin)
+```
+
+This code ensures that users with only view permissions cannot add or remove items from the `photos` ManyToManyField through the `ReportPhotoInlineModelAdmin`. The `has_add_permission` and `has_delete_permission` methods are overridden to always return `False`, preventing any modifications.

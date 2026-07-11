@@ -1,0 +1,23 @@
+```python
+from django.db.models import QuerySet
+
+def union_ordered_querysets(*querysets, order_by=None):
+    if not querysets:
+        return QuerySet()
+
+    combined_queryset = querysets[0]
+    for qs in querysets[1:]:
+        combined_queryset = combined_queryset.union(qs)
+
+    if order_by:
+        combined_queryset = combined_queryset.order_by(*order_by)
+
+    return combined_queryset
+
+# Usage example:
+qs1 = Dimension.objects.filter(pk__in=[10, 11])
+qs2 = Dimension.objects.filter(pk__in=[16, 17]).order_by('order')
+
+combined_qs = union_ordered_querysets(qs1, qs2, order_by=['order'])
+print(combined_qs.values_list('pk', flat=True))
+```

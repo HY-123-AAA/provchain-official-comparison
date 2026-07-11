@@ -1,0 +1,18 @@
+```python
+diff --git a/astropy/nddata/operations/mixins/arithmetic.py b/astropy/nddata/operations/mixins/arithmetic.py
+index 1234567..89abcdef 100644
+--- a/astropy/nddata/operations/mixins/arithmetic.py
++++ b/astropy/nddata/operations/mixins/arithmetic.py
+@@ -123,7 +123,10 @@ def _propagate_mask(self, other, operation, handle_mask):
+         if self.mask is None and other.mask is None:
+             return None
+         elif self.mask is None:
+-            return other.mask
++            if handle_mask is not None:
++                return handle_mask(np.zeros_like(other.data), other.mask)
++            else:
++                return other.mask
+         elif other.mask is None:
+             if handle_mask is not None:
+                 return handle_mask(self.mask, np.zeros_like(self.data))
+```

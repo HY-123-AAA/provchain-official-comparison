@@ -1,0 +1,13 @@
+```python
+from astropy.table import Table
+from io import StringIO
+
+# generate table
+t = Table([(1.23875234858e-24, 3.2348748432e-15), (2, 4)], names=('a', 'b'))
+tc = t.copy()  # copy table
+
+# print HTML table with "a" column formatted to show 2 decimal places
+with StringIO() as sp:
+    tc.write(sp, format="html", formats={"a": "{:.2e}".format})
+    print(sp.getvalue())
+```

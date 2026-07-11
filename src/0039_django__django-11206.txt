@@ -1,0 +1,16 @@
+```python
+from django.utils.numberformat import format as nformat
+from decimal import Decimal
+
+def custom_number_format(number, decimal_separator, decimal_pos=None):
+    if decimal_pos is not None:
+        # Calculate the smallest number that can be represented with the given decimal positions
+        min_representable = Decimal(f"1e-{decimal_pos}")
+        if abs(number) < min_representable:
+            return '0' + decimal_separator + '0' * decimal_pos
+    return nformat(number, decimal_separator, decimal_pos)
+
+# Example usage
+print(custom_number_format(Decimal('1e-199'), '.', decimal_pos=2))  # Output: '0.00'
+print(custom_number_format(Decimal('1e-200'), '.', decimal_pos=2))  # Output: '0.00'
+```
